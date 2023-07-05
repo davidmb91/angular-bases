@@ -24,9 +24,11 @@ export class MainPageComponent {
   constructor() { }
 
   onNewCharacter(character: Character): void {
-    console.log('Main page');
-    console.log(character);
+    this.characters.push(character);
+  }
 
+  onDeleteCharacter(id: number): void {
+    this.characters.splice(id, 1);
   }
 
 }
