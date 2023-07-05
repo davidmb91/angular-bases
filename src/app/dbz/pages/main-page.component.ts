@@ -23,4 +23,10 @@ export class MainPageComponent {
 
   constructor() { }
 
+  onNewCharacter(character: Character): void {
+    console.log('Main page');
+    console.log(character);
+
+  }
+
 }
